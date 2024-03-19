@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\it_lab-1_group-b\\glasaj.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|solutionrelative:it_lab-1_group-b\\glasaj.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\it_lab-1_group-b\\glasaj.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|solutionrelative:it_lab-1_group-b\\glasaj.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\it_lab-1_group-b\\uspeshnoglasanje.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|solutionrelative:it_lab-1_group-b\\uspeshnoglasanje.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|c:\\users\\leon\\source\\repos\\it_lab-1_group-b\\it_lab-1_group-b\\uspeshnoglasanje.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B.csproj|solutionrelative:it_lab-1_group-b\\uspeshnoglasanje.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1.csproj|c:\\users\\leon\\source\\repos\\it_lab-1_group-b\\it_lab-1_group-b\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1.csproj|solutionrelative:it_lab-1_group-b\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1.csproj|c:\\users\\leon\\source\\repos\\it_lab-1_group-b\\it_lab-1_group-b\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4C12B2D5-5FE3-41FC-BF9D-A8746E6EE147}|IT_LAB-1_GROUP-B\\IT_LAB-1.csproj|solutionrelative:it_lab-1_group-b\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1494831367:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Content\\bootstrap.css",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\Content\\bootstrap.css",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Content\\bootstrap.css",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\Content\\bootstrap.css",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-19T18:35:48.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\Default.aspx.cs",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Default.aspx.cs",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\Default.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T18:29:48.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UspeshnoGlasanje.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx.cs",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx.cs",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx.cs",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T18:26:00.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UspeshnoGlasanje.aspx",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\UspeshnoGlasanje.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-17T16:00:26.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Glasaj.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Glasaj.aspx.cs",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\Glasaj.aspx.cs",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Glasaj.aspx.cs*",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\Glasaj.aspx.cs*",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T14:14:33.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Glasaj.aspx",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Glasaj.aspx",
+              "RelativeDocumentMoniker": "IT_LAB-1_GROUP-B\\Glasaj.aspx",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-1_GROUP-B\\IT_LAB-1_GROUP-B\\Glasaj.aspx",
+              "RelativeToolTip": "IT_LAB-1_GROUP-B\\Glasaj.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-17T14:06:34.204Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
