@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        *{
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+
+        .recipe ,.recipeFin  {
+            width: 210px;
+            height: 220px;
+            border: 1px solid black;
+            padding-top: 25px;
+            padding-left: 20px;
+            display: inline-block;
+            opacity: 1;
+        }
+
+        #entered{
+            height: 300px;
+        }
+
+    </style>
+
+    <script>
+       window.onload = function(){
+        let unData = '[{"ime":"Nikola","prezime":"Nikolovski","id":"NNN1asdfgh","promet":"1000"},{"ime":"Nikolina","prezime":"Nikolovska","id":"NNN2asdfgh","promet":"3000"}]';
+        let data = JSON.parse(unData);
+
+        
+        
+        for(let i = 0; i<data.length ;i++){
+            let randomNum = Math.floor(Math.random()*90000) + 10000;
+            document.getElementById("entered").innerHTML += `<div class="recipe">
+           <p>Recipe number: ${randomNum}</p>
+           <p>Name: ${data[i].ime}</p> 
+           <p>Surname: ${data[i].prezime}</p> 
+           <p>ID: ${data[i].id}</p> 
+           <p>Price: ${data[i].promet}</p> 
+           <button onclick="pay(this);">Pay</button> 
+        </div>`
+
+        if(data[i].promet < 5000){
+            document.getElementsByClassName("recipe")[i].style.backgroundColor="rgb(129, 208, 141)";
+        }else{
+            document.getElementsByClassName("recipe")[i].style.backgroundColor="rgb(208, 129, 129)";
+        }
+    
+        }
+               
+       } 
+
+       function save(){
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let id = document.getElementById("id").value;
+        let price = document.getElementById("price").value;
+        
+        if(name == "" || surname == "" || id == "" || price == ""){
+            alert("Fill all the inputs!!!");
+            return;
+        }
+
+
+        if( id.match(/[A-Z]/g) == null ||  id.match(/[0-9]/g) == null ||
+        id.match(/[0-9]/g).length < 1 ||   id.match(/[A-Z]/g).length < 3 || id.length != 10){
+            
+            alert("Fill the right ID!!!");
+            return;
+        }
+
+        let recipes = document.getElementsByClassName("recipe");
+
+        for(let i = 0; i < recipes.length; i++){
+            if(recipes[i].children[1].innerHTML.split(":")[1].split(" ")[1] == name &&
+               recipes[i].children[2].innerHTML.split(":")[1].split(" ")[1] == surname &&
+               recipes[i].children[3].innerHTML.split(":")[1].split(" ")[1] == id){
+                recipes[i].children[4].innerHTML=`Price: ${parseInt(price) + parseInt(recipes[i].children[4].innerHTML.split(":")[1])}`;
+                return;
+               }
+        }
+
+        let color="";
+        if(parseInt(price) < 5000){
+            color="rgb(129, 208, 141)";
+        }else{
+            color="rgb(208, 129, 129)";
+        }
+
+
+        let randomNum = Math.floor(Math.random()*90000) + 10000;
+        document.getElementById("entered").innerHTML += `<div class="recipe" style="background-color:${color};">
+           <p>Recipe number: ${randomNum}</p>
+           <p>Name: ${name}</p> 
+           <p>Surname: ${surname}</p> 
+           <p>ID: ${id}</p> 
+           <p>Price: ${price}</p> 
+           <button onclick="pay(this);">Pay</button> 
+        </div>`
+        
+    
+       }
+
+       function pay(elem){
+        let parent = elem.parentNode.parentNode;
+        
+        let opacity = 1.0;
+        let id = setInterval(function (){
+            opacity -= 0.1;
+            elem.parentNode.style.opacity = `${opacity}`;
+        }, 100);
+
+        setTimeout(function (){
+            clearInterval(id);
+            elem.disabled = true;
+            elem.parentNode.className = "recipeFin";
+            elem.parentNode.style.opacity = "1";
+            document.getElementById("paid").appendChild(elem.parentNode);
+            parent.removeChild(elem.parentNode);
+        },1000)
+        
+       }
+    </script>
+
+
+</head>
+<body>
+    <h1>System for recipe</h1>
+    <div><label for="">Name:</label><input type="text" id="name"></div>
+    <div><label for="">Surname:</label><input type="text" id="surname"></div>
+    <div><label for="">ID:</label><input type="text" id="id"></div>
+    <div><label for="">Price:</label><input type="text" id="price"></div>
+    <button onclick="save();">Save</button>
+
+    <h1>Entered recipes</h1>
+    <div id="entered">
+        
+    </div>
+    
+    
+    <h1>Paid recipes</h1>
+    <div id="paid">
+
+    </div>
+
+</body>
+</html>

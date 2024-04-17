@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        *{
+            margin: 5px;
+        }
+        .word{
+            display: inline-block;
+        }
+
+        #wordsAdded{
+            height: 30px;
+            border: 1px solid black;
+        }
+
+
+
+    </style>
+
+    <script>
+        window.onload = function (){
+            const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const colors = ["red","green","blue","yellow","orange","brown","pink","grey"];
+            const colorsLength = colors.length; 
+            const charactersLength = characters.length;
+
+            let i=0;
+            while(i < 50){
+                let sentence = "";
+                let randomNum = Math.floor(Math.random() * 10) + 2;
+                let j=0;
+
+                while(j < randomNum){
+                    sentence += characters.charAt(Math.floor(Math.random() * charactersLength));
+                    j++;
+                }
+
+                let colorChoice = colors[Math.floor(Math.random() * colorsLength)];
+                document.getElementById("words").innerHTML += `<div onclick="add(this)" style="background-color:${colorChoice};" class="word" id="${i}">${sentence}</div>` 
+                i++;
+            }
+            
+        }
+
+        function add(elem){
+            elem.setAttribute("onclick","remove(this);");
+            document.getElementById("words").removeChild(elem);
+            document.getElementById("wordsAdded").appendChild(elem);
+            
+        }
+
+        function remove(elem){
+            elem.setAttribute("onclick","add(this);");
+            document.getElementById("wordsAdded").removeChild(elem);
+            
+            let elems = document.getElementById("words").children;
+            
+            for(let i = 1; i < elems.length;i++){
+                if(parseInt(elem.id) == 0){
+                    document.getElementById("words").insertBefore(elem,document.getElementById("words").firstChild);
+                    break;
+                }else if(parseInt(elem.id) == 49){
+                    document.getElementById("words").appendChild(elem);
+                    break;
+                }else if(parseInt(elem.id) > parseInt(elems[i-1].id) && parseInt(elem.id) < parseInt(elems[i].id)){
+                    document.getElementById("words").insertBefore(elem,elems[i]);
+                    break;
+                }
+            }
+            
+        }
+
+        function check(){
+            let wordsAdded = document.getElementById("wordsAdded").children;
+            
+            let score = 0;
+
+            for(let i = 0 ; i < wordsAdded.length-1; i++){
+                if(wordsAdded[i].innerHTML.charAt(wordsAdded[i].innerHTML.length-1) != wordsAdded[i+1].innerHTML.charAt(0)){
+                    alert("Wrong added words!!!");
+                    return;
+                }
+                score += wordsAdded[i].innerHTML.length + wordsAdded[i+1].innerHTML.length;
+            }
+
+            alert("The final score is: " + score);
+        }
+        
+    
+    </script>
+
+</head>
+<body>
+    <div id="words">
+
+    </div>
+
+    <div id="wordsAdded">
+
+    </div>
+    <button onclick="check();">check</button>
+    
+    
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        *{
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        input{
+            width: 25px;
+        }
+        body{
+            background-color: purple;
+        }
+    </style>
+
+<script>
+    
+    let unData = '[{"artist":"Marc", "title":"TheWorks", "genre":"Pop", "releaseYear":"2022"}, {"artist":"James", "title":"Jinx", "genre":"Rock", "releaseYear":"2021"},{"artist":"Jayne", "title":"Roll", "genre":"Blues", "releaseYear":"2023"},{"artist":"Alfie", "title":"MegaGiga", "genre":"Pop", "releaseYear":"2019"},{"artist":"Rick", "title":"Extract", "genre":"Rock", "releaseYear":"2028"},{"artist":"William", "title":"Extract", "genre":"Blues", "releaseYear":"2026"}]';
+    let data = JSON.parse(unData);
+    
+
+    function mix(){
+        let numSongs = document.getElementById("numSongs").value;
+        let genre = document.getElementById("genre").value;
+        let table = document.getElementById("table");
+        
+        table.innerHTML = ` <tr>
+            <th>id</th>
+            <th>artist</th>
+            <th>title</th>
+            <th>genre</th>
+            <th>release year</th>
+            <th>move</th>
+        </tr>`;
+        
+        let text = ``;
+        
+        for(let i = 0,j = 0; i < 6 ; i++){
+            let id = data[i].artist.match(/[A-Z]/g).join('') + data[i].title.match(/[A-Z]/g).join('');
+            
+            if(genre == "all" || genre == data[i].genre){
+                text+=`<tr><td>${id}</td><td>${data[i].artist}</td><td>${data[i].title}</td><td>${data[i].genre}</td><td>${data[i].releaseYear}</td><td><button onclick="up(this);">UP</button><button onclick="down(this);">DOWN</button></td></tr>`;
+                j++;
+            }
+
+            if(j==numSongs){
+                break;
+            }    
+        }
+        
+        table.innerHTML+=text;
+    }
+
+    function down(elem){
+        let parent = elem.parentNode.parentNode;
+
+        let sibling = parent.nextSibling;
+
+        if(sibling!=null){
+            let tmpElem = parent.innerHTML;
+            parent.innerHTML = sibling.innerHTML;
+            sibling.innerHTML = tmpElem;
+        }
+    
+    }
+
+    function up(elem){
+        let parent = elem.parentNode.parentNode;
+
+        let sibling = parent.previousSibling;
+
+        if(sibling!=null){
+            let tmpElem = parent.innerHTML;
+            parent.innerHTML = sibling.innerHTML;
+            sibling.innerHTML = tmpElem;
+        }
+    
+    }
+</script>
+
+
+</head>
+<body>
+    Get<input type="number" name="" id="numSongs"> songs! <button onclick="mix();">Mix!</button>
+    <select id="genre">
+        <option value="all">All</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Blues">Blues</option>
+    </select>
+
+    <table id="table">
+        <tr>
+            <th>id</th>
+            <th>artist</th>
+            <th>title</th>
+            <th>genre</th>
+            <th>release year</th>
+            <th>move</th>
+        </tr>
+    </table>
+    
+
+</body>
+</html>

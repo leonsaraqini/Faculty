@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        *{
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+    </style>
+
+    <script>
+        function create(){
+            document.getElementById("tableDiv").innerHTML="";
+
+            let delimiter = document.getElementById("delimiter").value;
+            
+            let unText = document.getElementById("text").value.split("\n");
+            let text = unText[0].split(delimiter);
+            let table = `<table><tr><th>${text[0]}</th><th>${text[1]}</th><th>${text[2]}</th></tr>`;
+            
+            
+            for(let i = 1; i < unText.length; i++){
+                text = unText[i].split(delimiter);
+                table += `<tr><td>${text[0]}</td><td>${text[1]}</td><td>${text[2]}</td></tr>`;
+            }
+
+            table += `</table>`;
+
+            document.getElementById("tableDiv").innerHTML += table;
+        }
+        
+    </script>
+
+
+</head>
+<body>
+    Text:<textarea name="" id="text" cols="25" rows="10"></textarea><br>
+    Delimiter: <input type="text" name="" id="delimiter"><br>
+    <button onclick="create();">Create</button><br>
+    <div id="tableDiv">
+
+    </div>
+
+</body>
+</html>

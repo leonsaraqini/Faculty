@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <style>
+        h1,h3{
+            text-align: center;
+        }
+
+        #inputs #inputOne,#inputTwo{
+            position: absolute;
+        }
+
+        label{
+            display: inline-block;
+            width: 100px;
+            
+        }
+
+        #inputTwo{
+            right: 0;
+        }
+
+        #inputs{
+            position: relative;
+            width: 780px;
+            height: 240px;
+            margin: auto;
+        }
+
+        #inputs input{
+            margin-bottom: 25px;
+        }
+
+        #click{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        table ,tr,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            opacity: 1;
+        }
+
+        #tables{
+            position: relative;
+            margin: auto;
+            width: 1030px;
+        }
+
+        #tables div{
+            position: absolute;
+        }
+
+        #tables div:nth-child(2){
+            right: 0;
+        }
+        
+
+
+
+    </style>
+
+    <script>
+
+        window.onload = function (){
+            let unData = '[{"ime":"Angela","prezime":"Angelova","id":"1503996780019","pol":"1","godini":"25","email":"anchian@yahoo.com","lokacija":"Bitola"},{"ime":"Dimitar","prezime":"Dimitrov","id":"1204950490019","pol":"2","godini":"71","email":"dimitri@gmail.com","lokacija":"Skopje"}]';
+            let data = JSON.parse(unData);
+            
+            let tableData = "";
+            let color = "";
+            let table = document.getElementById("adultTable");
+
+            for(let i = 0; i < data.length; i++){
+                if(data[i].pol == "1"){
+                    color = "red";
+                }else{
+                    color = "blue";
+                }
+
+                tableData += `<tr style = "background-color:${color}">
+                    <td style="display: none;" class="maticen">${data[i].id}</td>
+                    <td>${data[i].ime}</td>
+                    <td>${data[i].prezime}</td>
+                    <td>${data[i].email}</td>
+                    <td class="lokacija">${data[i].lokacija}</td>
+                    <td><button onclick="vax(this);">Вакциниран</button></td>
+                </tr>`;
+
+            }
+            table.innerHTML += tableData;
+        }
+
+        function add(){
+            let name = document.getElementById("name");
+            let surname = document.getElementById("surname");
+            let email = document.getElementById("email");
+            let mNumber = document.getElementById("mNumber");
+            let location = document.getElementById("location");
+            let years = document.getElementById("years");
+
+            
+            if(name.value == "" || surname.value == "" || email.value == "" || mNumber.value == "" || location.value == "" || years.value == "" || (document.getElementById("male").checked == false && document.getElementById("female").checked == false)){
+                alert("Fill all the inputs.");
+                return;
+            }
+
+
+            if(isNaN(parseInt(mNumber.value)) == true || mNumber.value.length != 13){
+                alert("Add the right maticen number.");
+                return;
+            }
+
+            let emailAdress = email.value.split("@")[1];
+
+            
+            if(emailAdress == undefined || (emailAdress != "yahoo.com" && emailAdress != "gmail.com")){
+                alert("Add the right mail.");
+            }
+
+            let color = "";
+
+            if(document.getElementById("male").checked == true){
+                color = "blue";
+            }else{
+                color = "red";
+            }
+
+            if(checkId(mNumber.value) == true){
+                alert("Change location.");
+                return;
+            }
+            
+            if(parseInt(years.value) > 18){
+                document.getElementById("adultTable").innerHTML += `<tr style = "background-color:${color}">
+                    <td style="display: none;" class="maticen">${mNumber.value}</td>
+                    <td>${name.value}</td>
+                    <td>${surname.value}</td>
+                    <td>${email.value}</td>
+                    <td class="lokacija">${location.value}</td>
+                    <td><button onclick="vax(this);">Вакциниран</button></td>
+                </tr>`;
+            }else{
+                document.getElementById("childTable").innerHTML += `<tr style = "background-color:${color}">
+                    <td style="display: none;" class="maticen">${mNumber.value}</td>
+                    <td>${name.value}</td>
+                    <td>${surname.value}</td>
+                    <td>${email.value}</td>
+                    <td class="lokacija">${location.value}</td>
+                    <td><button disabled>Вакциниран</button></td>
+                </tr>`;
+            }
+        
+
+        }
+
+        function checkId(id){
+            let ids = document.getElementsByClassName("maticen");
+            let locations = document.getElementsByClassName("lokacija");
+
+            for(let i = 0; i < ids.length ; i++){
+                console.log(ids[i].innerHTML == id && document.getElementById("location").value == locations[i].innerHTML);
+                if(ids[i].innerHTML == id && document.getElementById("location").value == locations[i].innerHTML){
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function vax(elem){
+            let tableRow = elem.parentNode.parentNode;
+            let tableRowChildren = tableRow.children;
+
+            let opacity = 1.0;
+            let id = setInterval(function(){
+                opacity -= 0.1; 
+                tableRow.style.opacity = `${opacity}`;
+            },100);
+
+            setTimeout(function(){
+                clearInterval(id);
+                document.getElementById("list").innerHTML+=`<li>${tableRowChildren[1].innerHTML} ${tableRowChildren[2].innerHTML}</li>`;
+                tableRow.parentNode.removeChild(tableRow)
+                
+            },1000);
+        }
+    
+    </script>
+
+</head>
+<body>
+    <div id="title">
+        <h1>Вакцина.мк</h1>
+        <h3>Сајт за искажување интерес за вакцина</h3>
+    </div>
+    
+    
+    <div id="inputs">
+        <div id="inputOne">
+            <label for="name">Име:</label><input type="text" id="name"><br>
+            
+            <label for="mNumber">Матичен број:</label><input type="text" name="mNumber" id="mNumber"><br>
+            
+            <label for="years">Години:</label><input type="text" id="years"><br>
+            
+            <label for="location">Локација:</label>
+            <select name="" id="location">
+                <option value="Skopje">Скопје</option>
+                <option value="Kumanovo">Куманово</option>
+                <option value="Bitola">Битола</option>
+                <option value="Tetovo">Тетово</option>
+            </select><br>
+        </div>
+
+        <div id="inputTwo">
+            <label for="surname">Презиме:</label><input type="text" id="surname"><br>
+            
+            <label for="gender">Пол:</label><input type="radio" name="gender" id="female">Женски<input type="radio" name="gender" id="male">Машки<br>
+            
+            <label for="email">Емаил адреса:</label><input type="text" id="email"><br>
+        
+        </div>
+        <button id="click" onclick="add();">Внеси</button>
+    </div>
+
+    <div id="tables">
+        <div>
+            <h3>Пријавени малолетни граѓани</h3>
+            <table id="childTable">
+                <tr>
+                    <th>Име</th>
+                    <th>Презиме</th>
+                    <th>Адреса</th>
+                    <th>Локација</th>
+                    <th>Статус</th>
+                </tr>
+            </table>
+        </div>
+        
+        <div>
+            <h3>Пријавени полнолетни граѓани</h3>
+            <table id="adultTable">
+                <tr>
+                    <th >Име</th>
+                    <th>Презиме</th>
+                    <th>Адреса</th>
+                    <th>Локација</th>
+                    <th>Статус</th>
+                </tr>
+            </table>
+            <p><b>Вакцинирани:</b></p>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
