@@ -13,28 +13,21 @@ int flip(int n, int ten){
 }
 
 int countOfDigits(int n){
-    int count = 0;
-
-    while(n){
-        count++;
-
-        n /= 10;
+    if(n == 0){
+        return 0;
     }
-
-    return count;
+    
+    return 1 + countOfDigits(n / 10);
 }
 
-int countOfTens(int n){
-    int count = 1;
-
-    while(n > 9){
-        count *= 10;
-
-        n /= 10;
+int countOfTens(int n , int ten){
+    if(n < 9){
+        return ten;
     }
-
-    return count;
+    
+    return ten * countOfTens(n / 10 , ten * 10);
 }
+
 
 int main() {
     int n;
