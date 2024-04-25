@@ -31,7 +31,7 @@ int main() {
 
     scanf("%d", &n);
 
-    printTriangl(n);
+    printTriangle(n);
 
     return 0;
 }
