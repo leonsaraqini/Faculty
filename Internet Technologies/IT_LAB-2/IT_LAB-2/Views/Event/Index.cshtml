@@ -1,0 +1,40 @@
+﻿@model List<IT_LAB_2.Models.Event>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Events</h2>
+
+<br />
+
+<button class="btn btn-info">@Html.ActionLink("Create Event", "CreateNewEvent", "Event", new { area = "" }, new {@class = "nav-link"})</button>
+
+<br />
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        @{
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Location</td>
+                    <td>@Html.ActionLink("Edit", "EditEvent", new { id = item.Id }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Delete", "DeleteEvent", new { id = item.Id}, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+            }
+        }
+  
+    </tbody>
+</table>
+

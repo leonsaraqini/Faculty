@@ -1,0 +1,26 @@
+﻿@model IT_LAB_2.Models.Event
+@{
+    ViewBag.Title = "CreateNewEvent";
+}
+
+<h2>Create New Event</h2>
+
+<button class="btn btn-info">@Html.ActionLink("Back", "Index", "Event", new { area = "" }, new { @class = "nav-link" })</button>
+
+@using (Html.BeginForm("CreateNewEvent", "Event"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Location)
+        @Html.TextBoxFor(m => m.Location, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Location)
+    </div>
+
+
+    <button class="btn btn-success mt-3" type="submit">Save Event</button>
+}

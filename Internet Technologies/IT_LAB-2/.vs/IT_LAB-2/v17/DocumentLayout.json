@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\views\\event\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\views\\event\\createnewevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\views\\event\\createnewevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\views\\event\\editevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\views\\event\\editevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|c:\\users\\leon\\source\\repos\\it_lab-2\\it_lab-2\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EAD05F-6C11-45C7-905F-A284480DE13C}|IT_LAB-2\\IT_LAB-2.csproj|solutionrelative:it_lab-2\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1494831367:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\EditEvent.cshtml",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Views\\Event\\EditEvent.cshtml",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\EditEvent.cshtml",
+              "RelativeToolTip": "IT_LAB-2\\Views\\Event\\EditEvent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T14:15:05.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "IT_LAB-2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T14:01:44.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateNewEvent.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\CreateNewEvent.cshtml",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Views\\Event\\CreateNewEvent.cshtml",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\CreateNewEvent.cshtml",
+              "RelativeToolTip": "IT_LAB-2\\Views\\Event\\CreateNewEvent.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T13:59:16.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\Index.cshtml",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Views\\Event\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Views\\Event\\Index.cshtml",
+              "RelativeToolTip": "IT_LAB-2\\Views\\Event\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAkAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-29T13:47:25.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Controllers\\EventController.cs",
+              "RelativeToolTip": "IT_LAB-2\\Controllers\\EventController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwBEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:44:30.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "IT_LAB-2\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\Leon\\source\\repos\\IT_LAB-2\\IT_LAB-2\\Models\\Event.cs",
+              "RelativeToolTip": "IT_LAB-2\\Models\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:41:13.143Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
