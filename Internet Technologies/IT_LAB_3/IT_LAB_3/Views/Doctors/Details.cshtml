@@ -1,0 +1,28 @@
+﻿@model IT_LAB_3.Models.Doctor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.Name</h2>
+
+<div>
+    <h4>Hospital: @Model.hospital.Name, Adress: @Model.hospital.Address</h4>
+    <hr />
+    <div>
+        <h3>Patients:</h3>
+        <ul>
+            @foreach (var patient in Model.patients)
+            {
+                <li><a href="/Patients/Details/@patient.Id">@patient.Name</a> </li>
+            }
+        </ul>
+    </div>
+
+    @Html.ActionLink("Insert Patient", "InsertNewPatient", new { id = Model.Id })
+    @Html.ActionLink("Delete Patient", "DeletePatientFromDoctor", new { id = Model.Id })
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
